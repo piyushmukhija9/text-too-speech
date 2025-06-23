@@ -3,8 +3,8 @@ function speakText() {
 
   // Custom word-to-speech replacements
   const customWords = {
-    "nikunj": "Oops! Did you mean mistake? Just kidding. Hello, Nikunj!",
-    "lavi ": "Warning: Lavi is too cool for boring people!",
+    "nikunj": "Oops! Did you mean mistake? Just kidding. Hello, lavi!",
+    "lavi": "Warning: Lavi is too cool for boring people!",
     "piyush": "Piyush Mukhija is a great developer!",
     "vansh": "oops! its not vansh irts vanshika !",
     "thanks": "You're welcome!"
