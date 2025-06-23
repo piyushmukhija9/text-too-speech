@@ -21,6 +21,13 @@ function speakText() {
   }
 
   let speech = new SpeechSynthesisUtterance(text);
-speech.rate = 0.8; // 1 is default, 0.5 is slower, 2 is fast
 
+  // ✅ Set rate after creating speech object
+  speech.rate = 0.8; // Slow it down
+  speech.pitch = 1;  // Optional: keep pitch normal
+  speech.volume = 1; // Optional: max volume
+
+  // ✅ Speak
+  window.speechSynthesis.cancel(); // Clears previous speech
+  window.speechSynthesis.speak(speech);
 }
