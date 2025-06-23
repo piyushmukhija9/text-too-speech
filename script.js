@@ -3,10 +3,10 @@ function speakText() {
 
   // Custom word-to-speech replacements
   const customWords = {
-    "nikunj": "why why i just want to ask why nikunj!",
-    "bye": "Goodbye, take care!",
+    "nikunj": "Oops! Did you mean mistake? Just kidding. Hello, Nikunj!",
+    "lavi ": "Warning: Lavi is too cool for boring people!",
     "piyush": "Piyush Mukhija is a great developer!",
-    "ai": "Artificial Intelligence is the future!",
+    "vansh": "oops! its not vansh irts vanshika !",
     "thanks": "You're welcome!"
   };
 
@@ -21,5 +21,6 @@ function speakText() {
   }
 
   let speech = new SpeechSynthesisUtterance(text);
-  window.speechSynthesis.speak(speech);
+speech.rate = 0.8; // 1 is default, 0.5 is slower, 2 is fast
+
 }
