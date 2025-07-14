@@ -1,18 +1,27 @@
+
 function speakText() {
   let text = document.getElementById("text").value.trim().toLowerCase();
 
-  // Custom word-to-speech replacements
   const customWords = {
-    "nikunj": "Oops! Did you mean mistake? Just kidding. Hello, lavi!",
-    "lavi": "Warning: Lavi is too cool for boring people!",
-    "piyush": "Piyush Mukhija is a great developer!",
-    "vansh": "oops! its not vansh irts vanshika !",
-    "thanks": "You're welcome!"
+    "nikunj": [
+      "Nikunj detected... warning: extra drama incoming!",
+      "Nikunj: officially outdated like floppy disks.",
+      "System alert! Nikunj has been mentioned again... rebooting mood!"
+    ],
+    "lavi": [
+      "Lavi entered the chat... brace for sarcasm and snacks!",
+      "Lavi, your name means light — but your vibe is full sunshine!",
+      "Lavi... you're not just a name, you're a whole vibe!"
+    ]
   };
 
-  // Check if custom speech exists
   if (customWords[text]) {
-    text = customWords[text];
+    const phrases = customWords[text];
+    text = phrases[Math.floor(Math.random() * phrases.length)];
+
+    if (text.includes("Lavi")) {
+      document.body.style.background = "linear-gradient(to right, pink, lightblue)";
+    }
   }
 
   if (text === "") {
@@ -21,13 +30,10 @@ function speakText() {
   }
 
   let speech = new SpeechSynthesisUtterance(text);
+  speech.rate = 0.8;
+  speech.pitch = 1;
+  speech.volume = 1;
 
-  // ✅ Set rate after creating speech object
-  speech.rate = 0.8; // Slow it down
-  speech.pitch = 1;  // Optional: keep pitch normal
-  speech.volume = 1; // Optional: max volume
-
-  // ✅ Speak
-  window.speechSynthesis.cancel(); // Clears previous speech
+  window.speechSynthesis.cancel();
   window.speechSynthesis.speak(speech);
 }
