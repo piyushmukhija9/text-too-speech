@@ -9,9 +9,8 @@ function speakText() {
       "System alert! Nikunj has been mentioned again... rebooting mood!"
     ],
     "lavi": [
-      "Lavi entered the chat... brace for sarcasm and snacks!",
-      "Lavi, your name means light — but your vibe is full sunshine!",
-      "Lavi... you're not just a name, you're a whole vibe!"
+      
+      "Lavi... you're not just a name, you're a whole vibe! , you are cool for boring people"
     ]
     "parmeet": [
     "Parmeet has entered the chat. Decency just hit 100%.",
