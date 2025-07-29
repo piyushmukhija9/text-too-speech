@@ -11,7 +11,7 @@ function speakText() {
     "lavi": [
       
       "Lavi... you're not just a name, you're a whole vibe! , you are cool for boring people"
-    ]
+    ],
     "parmeet": [
     "Parmeet has entered the chat. Decency just hit 100%.",
     "Parmeet... calm, composed, and carrying a whole lot of grace.",
