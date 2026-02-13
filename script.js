@@ -20,7 +20,11 @@ function speakText() {
     "Parmeet... the only person who can make silence feel peaceful.",
     "Parmeet is here. That’s your daily reminder that class still exists.",
     "Decency alert: Parmeet has been mentioned. Please behave, everyone!"
-  ]
+  ],
+    "sonakshi": [
+      
+      "sonakshi... you're not just a name, you're a whole vibe! , you are cool for boring people"
+      ]
   };
 
   if (customWords[text]) {
